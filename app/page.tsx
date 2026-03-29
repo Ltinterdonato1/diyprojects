@@ -134,16 +134,16 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-32 bg-stone-50">
+        <section id="services" className="py-32 bg-stone-950">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-20">
               <span className="text-amber-600 font-bold tracking-[0.3em] uppercase text-sm">Expertise</span>
-              <h2 className="text-4xl md:text-5xl font-serif mt-4 text-stone-900">Some Ideas</h2>
+              <h2 className="text-4xl md:text-5xl font-serif mt-4 text-white">Some Ideas</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {services.map((service, index) => (
-                <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-stone-100">
+                <div key={index} className="group bg-stone-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-stone-800">
                   <div className="relative h-64 overflow-hidden">
                     {"media" in service ? (
                       <ServiceCarousel items={service.media as any} />
@@ -158,8 +158,8 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                   <div className="p-8">
-                    <h3 className="text-2xl font-serif mb-4 text-stone-900">{service.title}</h3>
-                    <p className="text-stone-600 leading-relaxed mb-6">
+                    <h3 className="text-2xl font-serif mb-4 text-white">{service.title}</h3>
+                    <p className="text-stone-400 leading-relaxed mb-6">
                       {service.description}
                     </p>
                     <a href="#contact" className="text-amber-600 font-bold uppercase tracking-widest text-xs flex items-center gap-2 hover:gap-4 transition-all">

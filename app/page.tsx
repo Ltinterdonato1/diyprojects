@@ -68,16 +68,26 @@ export default function Home() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex flex-col">
+          <div className="flex items-center">
             <a 
               href="#" 
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="text-xl font-serif font-bold tracking-tight text-stone-900 leading-none hover:text-amber-600 transition-colors"
+              className="flex items-center gap-3 group"
             >
-              DIY PROJECTS
+              <div className="relative w-10 h-10 overflow-hidden rounded-lg bg-white p-1 shadow-sm border border-stone-100 group-hover:border-amber-200 transition-colors">
+                <Image 
+                  src="/favicon.ico" 
+                  alt="DIY Projects Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-xl font-serif font-bold tracking-tight text-stone-900 leading-none group-hover:text-amber-600 transition-colors">
+                DIY PROJECTS
+              </span>
             </a>
           </div>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600 uppercase tracking-widest">

@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZVVgWN6nSCHCpaR_LdbqI0e6EoQfsFF4",
-  authDomain: "diyprojects-500ad.firebaseapp.com",
-  projectId: "diyprojects-500ad",
-  storageBucket: "diyprojects-500ad.firebasestorage.app",
-  messagingSenderId: "159981369746",
-  appId: "1:159981369746:web:166725de93f4df727ee94b",
-  measurementId: "G-VZ7THR7KHQ"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase (singleton pattern for Next.js)

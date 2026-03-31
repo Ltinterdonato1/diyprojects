@@ -17,8 +17,8 @@ const services = [
     image: "/TinyHouse4.jpg",
   },
   {
-    title: "Modern Fencing",
-    description: "Sleek horizontal wood slats and secure fencing solutions.",
+    title: "Office Sheds",
+    description: "Create a productive workspace with our custom office sheds, designed for comfort and functionality.",
     media: [
       { type: "image", src: "/Screenshot 2026-03-29 at 2.31.58 PM.png" },
       { type: "image", src: "/Screenshot 2026-03-29 at 2.32.07 PM.png" },
@@ -36,7 +36,7 @@ const services = [
     image: "/TinyHouse2.avif",
   },
   {
-    title: "Modern Living Spaces",
+    title: "ADU",
     description: "Thoughtfully designed interiors that maximize comfort and style in any footprint.",
     media: [
       { type: "image", src: "/TinyHouse1.webp" },
@@ -86,7 +86,7 @@ export default function Home() {
                 />
               </div>
               <span className="text-xl font-serif font-bold tracking-tight text-stone-900 leading-none group-hover:text-amber-600 transition-colors">
-                DIY PROJECTS
+                You Nailed It
               </span>
             </a>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
             <a href="https://www.facebook.com/diyprojectstacoma" target="_blank" className="hover:text-amber-600 transition-colors">Facebook</a>
             <a href="https://www.instagram.com/diy_projects2023" target="_blank" className="hover:text-amber-600 transition-colors">Instagram</a>
             <a href="#services" className="hover:text-amber-600 transition-colors">Services</a>
-            <a href="#contact" className="bg-stone-900 text-white px-6 py-3 rounded-full hover:bg-amber-600 transition-all hover:shadow-lg">Call Us Today</a>
+            <a href="#contact" className="bg-stone-900 text-white px-6 py-3 rounded-full hover:bg-amber-600 transition-all hover:shadow-lg">Contact US</a>
           </nav>
         </div>
       </header>
@@ -181,7 +181,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-stone-950 text-stone-500 py-12 border-t border-stone-800"> 
             <p className="text-xs text-center">
-            © {new Date().getFullYear()} DIY Projects. All rights reserved.
+            © {new Date().getFullYear()} You Nailed It. All rights reserved.
             </p>
       </footer>
     </div>
